@@ -8,7 +8,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 import java.util.UUID;
 
-public interface InstructorProfileRepository extends JpaRepository<Instructor_Profile, Long> {
+public interface InstructorProfileRepository extends JpaRepository<Instructor_Profile, UUID> {
 
 
     List<Instructor_Profile> findByPhone(String phone);

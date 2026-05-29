@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 import java.util.UUID;
 
-public interface LessonRepository extends JpaRepository<Lesson, Long> {
+public interface LessonRepository extends JpaRepository<Lesson, UUID> {
 
     List<Lesson> findByTitleContaining(String title);
     List<Lesson> findByTitleStartingWith(String title);

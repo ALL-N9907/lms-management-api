@@ -7,8 +7,9 @@ import org.springframework.data.repository.query.Param;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.UUID;
 
-public interface CourseRepository extends JpaRepository<Course, Long> {
+public interface CourseRepository extends JpaRepository<Course, UUID> {
 
     List<Course> findByTitle(String title);
     List<Course> findByStatus(String Status);

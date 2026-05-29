@@ -28,7 +28,7 @@ public class Student {
     private String email;
 
     @Column(name = "create_at") private Instant createAt;
-    @Column(name = "update_at") private Instant UpdateAt;
+    @Column(name = "update_at") private Instant updateAt;
 
     @OneToMany(mappedBy = "student")
     private Set<Assessment> assessments;

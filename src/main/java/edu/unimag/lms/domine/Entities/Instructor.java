@@ -2,7 +2,6 @@ package edu.unimag.lms.domine.Entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.Id;
 
 import java.time.Instant;
 import java.util.Set;

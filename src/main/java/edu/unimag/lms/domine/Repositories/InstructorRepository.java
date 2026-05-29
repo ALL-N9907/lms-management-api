@@ -8,8 +8,9 @@ import org.springframework.data.repository.query.Param;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.UUID;
 
-public interface InstructorRepository extends JpaRepository<Instructor, Long> {
+public interface InstructorRepository extends JpaRepository<Instructor, UUID> {
     List<Instructor> findByFullName (String fullname);
     List<Instructor> findByEmail (String Email);
 
