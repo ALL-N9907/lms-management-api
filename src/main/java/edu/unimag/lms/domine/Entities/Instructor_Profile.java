@@ -1,4 +1,4 @@
-package edu.unimag.lms.entities;
+package edu.unimag.lms.domine.Entities;
 
 import jakarta.persistence.*;
 import lombok.*;

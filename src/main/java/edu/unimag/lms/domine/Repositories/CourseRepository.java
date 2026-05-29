@@ -1,6 +1,6 @@
-package edu.unimag.lms.repositories;
+package edu.unimag.lms.domine.Repositories;
 
-import edu.unimag.lms.entities.Course;
+import edu.unimag.lms.domine.Entities.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
