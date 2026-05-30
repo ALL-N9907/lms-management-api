@@ -14,6 +14,6 @@ public interface EnrollmentRepository extends JpaRepository<Enrollment, UUID> {
     boolean existsByStudentId(UUID studentId);
     List<Enrollment> findByStatus (String status);
 
-    @Query("SELECT e FROM Enrollment e WHERE e.enrolledAt > :date")
+    @Query("SELECT e FROM Enrollment e WHERE e.enrolledAt = :date")
     List<Enrollment> findEnrollmentEnrolledAt(@Param("date")Instant date);
 }

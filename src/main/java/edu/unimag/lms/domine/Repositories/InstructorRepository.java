@@ -14,6 +14,6 @@ public interface InstructorRepository extends JpaRepository<Instructor, UUID> {
     List<Instructor> findByFullName (String fullname);
     List<Instructor> findByEmail (String Email);
 
-    @Query("SELECT i FROM Instructor i WHERE i.createAt > :date")
+    @Query("SELECT i FROM Instructor i WHERE i.createAt = :date")
     List<Instructor> findInstructorCreatedAt(@Param("date")Instant date);
 }
